@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
   <aside class="sidebar">
@@ -12,19 +15,24 @@
       <span>☰</span>
       <span>Dashboard</span>
     </div>
-    <ul class="first">
-      <li>Home</li>
-      <li>Profile</li>
-      <li>Messages</li>
-      <li>History</li>
-      <li>Tasks</li>
-      <li>Communities</li>
-    </ul>
-    <ul class="second">
-      <li>Settings</li>
-      <li>Support</li>
-      <li>Privacy</li>
-    </ul>
+    <div class="sidebar-first">
+      <ul class="first-level">
+        <li><img class="sidebar-icon"src="images/home-account.svg" alt="home"> Home</li>
+        <li><img class="sidebar-icon"src="images/account.svg" alt="profile"> Profile</li>
+        <li><img class="sidebar-icon"src="images/chat.svg" alt="messages"> Messages</li>
+        <li><img class="sidebar-icon"src="images/history.svg" alt="history"> History</li>
+        <li><img class="sidebar-icon"src="images/file-tree.svg" alt="tasks"> Tasks</li>
+        <li><img class="sidebar-icon"src="images/account-group.svg" alt="communities"> Communities</li>
+
+      </ul>
+    </div>
+    <div class="sidebar-second">
+      <ul class="second-level">
+       <li><img class="sidebar-icon"src="images/cog.svg" alt="settings"> Settings</li>
+       <li><img class="sidebar-icon"src="images/face-agent.svg" alt="support"> Support</li>
+       <li><img class="sidebar-icon"src="images/alert.svg" alt="privacy"> Privacy</li>
+      </ul>
+    </div>
   </aside>
   <div class="main-content">
     <header class="header">
@@ -36,29 +44,57 @@
         <span class="name">Morgan Oakley</span>
         </div>
     </div>
-    <div class="greeting">
-        <span class="avatar-large">🙂</span>
-        <div>
-        <div class="hi">Hi there,</div>
-        <div class="username">Morgan Oakley <span class="handle">(@morgan)</span></div>
-        </div>
-    </div>
-    <div class="header-buttons">
-        <button>New</button>
-        <button>Upload</button>
-        <button>Share</button>
+    <div class="header-bottom">
+      <div class="greeting">
+          <span class="avatar-large">🙂</span>
+          <div>
+          <div class="hi">Hi there,</div>
+          <div class="username">Morgan Oakley <span class="handle">(@morgan)</span></div>
+          </div>
+      </div>
+      <div class="header-buttons">
+          <button>New</button>
+          <button>Upload</button>
+          <button>Share</button>
+      </div>
     </div>
     </header>
     <main>
       <section class="projects">
-        <h2>Your Projects</h2>
+        <h2 class="projects-title">Your Projects</h2>
         <div class="project-grid">
-          <div class="card">Super Cool Project</div>
-          <div class="card">Less Cool Project</div>
-          <div class="card">Impossible App</div>
-          <div class="card">Easy Peasy App</div>
-          <div class="card">Ad Blocker</div>
-          <div class="card">Money Maker</div>
+          <div class="card">
+            <h2 class="title">Super Cool Project</h2>
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              Deleniti nostrum alias delectus possimus officia, 
+              dignissimos sunt sint expedita praesentium earum excepturi 
+              voluptate voluptatibus recusandae itaque pariatur numquam quia eligendi iste.</p>
+          </div>
+          <div class="card"><h2 class="title">Super Cool Project</h2>
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              Deleniti nostrum alias delectus possimus officia, 
+              dignissimos sunt sint expedita praesentium earum excepturi 
+              voluptate voluptatibus recusandae itaque pariatur numquam quia eligendi iste.</p></div>
+          <div class="card"><h2 class="title">Super Cool Project</h2>
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              Deleniti nostrum alias delectus possimus officia, 
+              dignissimos sunt sint expedita praesentium earum excepturi 
+              voluptate voluptatibus recusandae itaque pariatur numquam quia eligendi iste.</p></div>
+          <div class="card"><h2 class="title">Super Cool Project</h2>
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              Deleniti nostrum alias delectus possimus officia, 
+              dignissimos sunt sint expedita praesentium earum excepturi 
+              voluptate voluptatibus recusandae itaque pariatur numquam quia eligendi iste.</p></div>
+          <div class="card"><h2 class="title">Super Cool Project</h2>
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              Deleniti nostrum alias delectus possimus officia, 
+              dignissimos sunt sint expedita praesentium earum excepturi 
+              voluptate voluptatibus recusandae itaque pariatur numquam quia eligendi iste.</p></div>
+          <div class="card"><h2 class="title">Super Cool Project</h2>
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              Deleniti nostrum alias delectus possimus officia, 
+              dignissimos sunt sint expedita praesentium earum excepturi 
+              voluptate voluptatibus recusandae itaque pariatur numquam quia eligendi iste.</p></div>
         </div>
       </section>
     <div class="sidebar-right">

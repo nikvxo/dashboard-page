@@ -84,6 +84,7 @@ body {
   display: grid;
   grid-template-columns: 240px 1fr;
   min-height: 100vh;
+  font-family: 'Roboto', sans-serif;
 }
 .container{
   background-color:black;
@@ -94,7 +95,7 @@ body {
 
 .sidebar{
   background: cornflowerblue;
-  color: #fff;
+  color: black;
   padding: 2rem;
   display:flex;
   flex-direction: column;
@@ -117,7 +118,7 @@ body {
 }
 
 .sidebar li{
-  margin: 1rem 0;
+  margin: 0.5rem;
   font-size: 1.1rem;
   cursor: pointer;
   transition: background 0.2s;
@@ -150,7 +151,7 @@ body {
 
 .header input[type="search"]{
   flex: 1;
-  max-width: 400px;
+  max-width: 800px;
   padding: 0.5rem 1rem;
   border-radius: 20px;
   border: 1px solid #ddd;
@@ -175,10 +176,11 @@ body {
   color: #fff;
   border: none;
   border-radius: 20px;
-  padding: 0.5rem 1rem;
-  font-size: 1rem;
+  padding: 0.5rem 2rem;
+  font-size: 1.2rem;
   cursor: pointer;
   transition: background 0.2s;
+
 }
 
 .header-buttons button:hover{
@@ -195,6 +197,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  max-width: 70%;
 }
 
 .announcements, .trending{
@@ -207,15 +210,17 @@ body {
 
 .project-grid{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 1.5rem;
   margin-top: 1rem;
+  justify-content: center;
+  margin-left: auto;
+  max-width: 1000px;
 }
 
 .header-top{
   display:flex;
-  align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   gap: 2rem;
 }
 
@@ -239,4 +244,41 @@ body {
 .username {
   font-size: 1.3rem;
   font-weight: bold;
+}
+
+.header-bottom{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.projects-title{
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  max-width: 1000px;
+  margin-right: auto;
+  margin-left: 3.5rem;
+}
+
+.sidebar-second{
+  margin-top: 1.5rem;
+}
+.second-level li{
+  display: flex;
+  align-items: center;
+  gap: 0.5em; /* space between icon and text */
+}
+/* Make sure this is in styles.css */
+.first-level li {
+  display: flex;
+  align-items: center;
+  gap: 0.5em; /* space between icon and text */
+}
+
+.sidebar-icon {
+  height: 1.5rem; /* matches text size */
+  width: auto;
+  display: inline-block;
+  vertical-align: middle;
 }
